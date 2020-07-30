@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buy an event ticket</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css"
+    />
+
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="sales-form">
+      <img src="/event.jpg" class="event-photo" />
+
+      <div id="reserve" class="info">
+        <div class="occurs_at">9pm - 4am, October 31st 2020</div>
+
+        <div class="title">
+          Dance Dance Dance
+        </div>
+
+        <div class="description">
+          The EDM event of a lifetime. Lazers, loud music, 4 stages, 12 DJs,
+          pyrotechnics and heat!
+        </div>
+
+        <div id="act-now">
+          <button id="buy-now" onclick="showStep('buy')">
+            Buy now for $50
+          </button>
+
+          Get your ticket now, there are only
+          <span class="tickets-left">
+            <span id="ticket-count"></span> tickets</span
+          >
+          left!
+        </div>
+      </div>
+
+      <div id="buy" class="info">
+        <input type="text" placeholder="Full name" />
+        <input type="text" placeholder="Email Address" />
+
+        <button id="buy" onClick="buyTicket()">
+          Complete purchase
+        </button>
+
+        <div>You will be billed for $50 USD</div>
+      </div>
+
+      <div id="complete" class="info">
+        Your ticket has been purchased!
+      </div>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>
